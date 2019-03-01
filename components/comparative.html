@@ -6,11 +6,11 @@
 		</div>
 		<div layout="row" layout-align="space-around center" class="containerTA" layout-padding>
 			<div>
-				<textarea class="text_area" ng-model="list1" flex rows="10" cols="50" placeholder="Paste your excel column..." required></textarea>
+				<textarea class="text_area" ng-model="list1" flex rows="6" cols="50" placeholder="Paste your first excel column..." required></textarea>
 			</div>
 	
 			<div>
-				<textarea class="text_area" ng-model="list2" flex rows="10" cols="50" placeholder="Paste your excel column..." required></textarea>
+				<textarea class="text_area" ng-model="list2" flex rows="6" cols="50" placeholder="Paste your second excel column..." required></textarea>
 			</div>
 		</div>
 		
@@ -23,13 +23,13 @@
 </div>
 
 
-<div ng-if="arrayReady" layout="column" layout-align="space-around center">
+<div layout="column" layout-align="space-around center" class="tableResults">
 	<table id="customers">
   		<tr>
     		<th>Without finding</th>
   		</tr>
   		
-  		<tr ng-repeat="item in array1">
+  		<tr ng-repeat="item in arrayNames">
     		<td>{{item}}</td>
   		</tr>
 	</table>

@@ -31,30 +31,45 @@ textarea
 	transition: height 2s ease;
 }
 
-#customers {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 40%;
+#customers
+{
+  	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  	border-collapse: collapse;
+  	width: 400px;
+	padding: 60px;
 }
 
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+#customers td, #customers th
+{
+  	border: 1px solid #ddd;
+  	padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(even)
+{
+	background-color: #f2f2f2;
+}
 
-#customers tr:hover {background-color: #ddd;}
+#customers tr
+{
+	background-color: #ddd;
+}
 
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #4CAF50;
-  color: white;
+#customers th
+{
+ 	padding-top: 12px;
+  	padding-bottom: 12px;
+  	text-align: center;
+  	background-color: #858593;
+  	color: white;
 }
 
 td
 {
 	text-align: center;
+}
+
+.tableResults
+{
+	padding-bottom: 60px;
 }
