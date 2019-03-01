@@ -7,18 +7,11 @@ angular.module('employees')
     {
         templateUrl:  'components/comparative.html',
            
-        controller: function()
+        controller: function($scope)
         {
-			var i = 0;
-			var j = 0;
-			var conta = 0;
-			var contaNo = 0;
-			var flag_found = 0;
-			var result = [];
 			
-			var arre2 = ["abelpavon","abnerhernandez","abrahamtorres","abriljacobo","adamjohnston","adamkane","adanrosales","adrianaguilar","adriandavalos","adrianmiranda","adrianrubiera","adrianalegorreta","alancaballero","albertocota","albertomojica","aldorodriguez","aldosanchez","aldotrevino","aldovenegas","alejandraguiot","alejandrogomez","alejandrohernandez","alejandromacias","alejandroocampo","alejandroortiz","alejandrorangel","alejandrosalcedo","alexeyturlapov","alexisjuarez","alexiszapata","alfredoesteban","alvaroarteaga","alvaropadilla","amandatorres","anaatayde","anabetancourt","andreamontelongo","andresaraujo","andresmunoz","andresrobles","andressilva","andrewflanagan","angelborja","angelmorett","angelserrano","angeltorres","antoniogarcia","antoniomolina","arantxavillasenor","armandinaborja","armandohernandez","arongutierrez","arturonunez","ashleycraig","astridvillanueva","audeliolujan","baldemarroldan","barrygribben","benjaminrodriguez","boneycruz","brandonvilla","brianokane","bryanarroyo","campbellgilpin","carlosaragon","carloschucuan","carloscruz","carlosgonzalez","carloshernandez","carloshurtado","carloslandin","carloslopez","carlosperez","carlosruiz","carlossantoyo","carlossolorzano","carlostorres","carmencarlos","cesarhernandez","cesarmancillas","cesarramirez","cesartolosa","christopherhunter","clyotolentino","cristiancolorado","danielgonzalez","danielavila","danielpenaloza","danielsolis","danielwilson","dantecarvajal","davidcarrillo","davidgarcia","deborahdelamora","deniceesparza","dianamoran","diegocarretero","diegocifuentes","diegocortes","diegohernandez","diegohuerta","diegolozano","diegorivero","dulcesanchez","eamonscullion","edgararguelles","edgaravalos","edgarcastelo","edgardiaz","edgarescamilla","edgargarcia","edgargochi","edgarortiz","edgardogarcia","edgwinholguin","eduardoarias","eduardobaltazar","eduardocastellanos","eduardogalvan","eduardoguerrero","eduardohernandez","eduardoramirez","eduardotorres","elenaavila","eliasfregoso","elizabethgutierrez","elizabethperez","emanuelmorales","emiliogalvan","emiliogutierrez","emilioperez","emmanuelalmeida","emmanuelhernandez","emmanuelhuitrado","eneidasanchez","enithflores","enriquegutierrez","eoinmcafee","erickgutierrez","erickjimenez","erickvaldivia","erikramirez","ernestoalejo","ernestoarias","ernestocruz","ernestoferat","ernestohernandez","ernestoherrera","esauorozco","estheralmaguer","estherdorado","eunicenunez","evelynefranco","fabianonate","fabioramirez","federicogimeno","felipenevarez","felipesarabia","fernandabriseno","fernandatrigos","fernandoaguirre","fernandocastillo","fernandoleon","fernandolopez","fernandomolina","fernandomorales","fernandoperez","franciscocarreon","franciscocontreras","franciscoescoppinichi","franciscoflores","franciscogonzalez","franciscorivera","franciscosanchez","frasercassidy","fredelluc","froylanvargas","gabrielacosta","gabrielcervantes","gabrieldeak","gabrielsaldana","gabrielalopez","gabrielanunez","garryirwin","geibenvarela","geovanniperez","gerardoaguirre","gerardogamez","gerardogarcia","gerardohernandez","gerardolopez","gerardorojas","germanzapien","giancarlodivece","gilbertosanchez","gonzalomarquez","guillermocavazos","guillermohernandez","guillermoruvalcaba","gustavodelgadillo","gustavogomez","harryfacundo","heatherpresley","hectormiranda","hectorramirez","hectorvilla","helamanavalos","herzonrodriguez","hiramacebo","hugobernal","hugorios","iancastillo","ignaciomiranda","ileanmariscal","irvingcaro","irvingflores","isaacramirez","isaiasgutierrez","israelsantiago","ivanbanuelos","ivanespino","ivansoto","jairpadilla","jairpinedo","jakesexton","jamiehiggins","javieraspuru","javierastudillo","javiermartinez","javierrodriguez","javierromero","jeannettefaber","jennihernand","jesusacedo","jesusburquez","jesusespinoza","jesushernandez","jesuslopez","jesusmellado","jesusmoreno","jesusnoriega","jesusosuna","jesusparra","jesusramirez","jesusramos","joaquinrodulfo","joelbarrett","jonathanbaldwin","jonathankhattak","jorgeanaya","jorgelopez","jorgemejia","jorgenava","jorgeoduno","jorgeperez   ","jorgerios","jorgerodriguez","josealba","josealvarez","josearellano","josearteaga","josebarcenas","josecervantes","josecisneros","josecorrea","josedelamora","josediaz","joseesquivel","josegarcia","josegomez","josehernandez","joselugo","joseocampo","joserodriguez","josesalas","josesanchez","josesandoval","josevazquez","lindseyjoseph","joshuabarrett","jovitadorado","juanalcala","juancastaneda","juancastro","juangaribay","juanherrera","juanjimenez","juanmelgarito","juanmora","juansantiago","juantorre","julioochoa","juliosandoval","justinebateman","karlamartin","karla pinto","katiaverdugo","katrinajones","kayodeanthony","kirstymccrystal","krystelbaca","kurtismoore","laurabracho","leecheung","leekennedy","leemckay","leonardoluna","leonardoraygoza","leopoldomoranchel","leticiamartinez","lindamccall","lizdiaz","lorenzoinfante","loubertluc","luisalfaro","luisanducho","luisaquino","luisarraiz","luisbarreras","luiscalva","luiscastro","luischapa","luiscortes","luisfont","luisgarza","luisgonzalez","luisguerra","luishuerta","luismendoza","luismontealegre","luisnaranjo","luisortega","luisosuna","luisperez","luissandoval","luistoscano","luisvaldovinos","luisvillamil","mansooraleep","manuelmiranda","manuelrodriguez","manuelsantos","manuelsilva","manuelvega","marcomartinez","marcoperez","marcotulio","marcovilla","marcozamora","marcosgonzalez","marcosreyes","mariabarba","marianaprado","marianasandoval","mariodivece","mariomiranda","marioperaza","marioperez","marioruiz","marisolcolon","markbrown","martingallegos","matilderocha","matthewmckee","mauriciodeanda","mauricioperez","mauriciosanchez","mauricioverdin","maxrosas","melissakeenan","michaelacromie","michelalmagro","michellecastrejon","migueldelgadillo","migueldelgado","miguelgonzalez","miguelrodriguez","mikebarrett","nathanmcalinden","nestorsanchez","nestorsoto","niallmcmahon","nilzaaguilar","noeanton","noemihernandez","noemipajarito","norbertocabrera","normanperez","olaflopez","omarornelas","orlandoarias","oscarbarrera","oscarcastellanos","oscargarcia","oscarledon","oscarlopez","oscarsanchez","osvaldocampos","osvaldosantiago","oswaldojacobo","pabloitto","pabloperez","paolaaguilar","paoladealba","pastorinniochoa","patriciaayala","patriciogonzalez","patrickhendron","paulbrownlee","paulmatchett","paulmccrory","paulsnowdon","paultummon","paulinamendoza","paulinamunoz","pedrogandoulf","peterdrysdale","radamesacosta","rafaelgarcia","rafaelreyes","ramiroflores","renelopez","ricardocastaneda","ricardogonzalez","ricardomojica","ricardonegrete","ricardoruvalcaba","robertogomez","robertohalgravez","robertojasso","rodrigogarcia","rodrigoloyola","rogelioperez","roisinhughes","rosanalasso","rubenlicea","ryanpark","salvadorenciso","salvadorgomez","salvadorgonzalez","samuelrangel","sandyvilla","santiagosanchez","saracamacho","sergioburgueno","sergioflores","sergioparra","sofiamilanes","stepfaniegarcia","stephaniagonzalez","stevecruz","taylorjackson","terrykernan","tomdigati","ulisescastaneda","valesygonzalez","vaniavega","veronicamiranda","victorarango","victorcarlos","victorescajeda","victorgarcia","victorgonzalez","victorrojas","victorvalencia","victorialopez","victoriarodriguez","victorinotorresmacias","waltergarcia","williamcaprara","williampark","xochitlnavarro","yassercarreon","yeseniarincon","yulianalopez","zulemaluna","alisonfernandez","guillermocoronado","irwingreza","marcosbarrera","cesarflores","susanacervantes","joseenciso","diegoperez","alangutierrez","citlallidelvillar","hectorherrera","davidgonzalez","ricardovasquez","angeltejeida","carlosalcala","nayelimarquez","sergiodiaz","adamlynch","alejandroquintana","alejandrocornejo","fernandodelpino","cristianvenegas","osvaldopadilla","oscarbacilo","irenebustos","mayrencastillo","sergiopatron","alejandrogarcia","carlosramirez","eduardogutierrez","susanadelgado","roidescruz","ankitvyas","leonardoramirez","isaacbautista","luisflores","alejandromartinez","kacperkuczkowski","chriscrawford","richardgillen"];
-			var arre1 = ["abelelizalde","abelpavon","abnerhernandez","abrahamgarcia","abrahamtorres","abriljacobo","adamjohnston","adamkane","adanrosales","adrianaguilar","adriandavalos","adrianmiranda","adrianalegorreta","alancaballero","alangutierrez","albertomojica","aldorodriguez","aldosanchez","aldovenegas","aldotrevino","alejandraguiot","alejandrocornejo","alejandrogomez","alejandrohernandez","alejandromacias","alejandroocampo","alejandroquintana","alejandrorangel","alejandrosalcedo","alexeyturlapov","alexisjuarez","alexiszapata","alfredoesteban","alisonfernandez","alvaroarteaga","alvaropadilla","amandatorres","anaatayde","anabetancourt","andreamontelongo","andresaraujo","andresmunoz","andresrobles","andressilva","andrewflanagan","angelborja","angelmorett","angelserrano","angeltejeida","angeltorres","antoniogarcia","antoniomolina","arantxavillasenor","armandinaborja","armandohernandez","arongutierrez","arturonunez","ashleycraig","astridvillanueva","audeliolujan","barrygribben","beldemarroldan","benjaminrodriguez","boneycruz","brandonvilla","brianokane","bryanarroyo","campbellgilpin","carlosalcala","carloschucuan","carloscruz","carlosgonzalez","carloshernandez","carloshurtado","carloslandin","carloslopez","carlosperez","carlosruiz","carlossantoyo","carlossolorzano","carlostorres","cesarflores","cesarhernandez","cesarmancillas","cesarramirez","cesartolosa","christopherhunter","citlallidelvillar","clyotolentino","cristiancolorado","danielavila","danielgonzalez","danielpenaloza","danielsolis","danielwilson","dantecarvajal","davidcarillo","davidgarcia","davidgarcia","davidgonzalez","deborahdelamora","deniceesparza","dianamoran","diegocarretero","diegocifuentes","diegocortes","diegohernandez","diegohuerta","diegolozano","diegoperez","diegorivero","dulcesanchez","eamonscullion","edgararguelles","edgaravalos","edgarcastelo","edgardiaz","edgarescamilla","edgargarcia","edgargochi","edgarortiz","edgardogarcia","edgwinholguin","eduardoarias","eduardobaltazar","eduardocastellanos","eduardogalvan","eduardoguerrero","eduardogutierrez","eduardohernandez","eduardoramirez","eduardotorres","eliasfregoso","elizabethgutierrez","elizabethperez","elizabethtorres","emanuelmorales","emiliogalvan","emiliogutierrez","emilioperez","emmanuelalmeida","emmanuelhernandez","emmanuelhuitrado","eneidasanchez","enithflores","enriquegutierrez","eoinmcafee","erickgutierrez","erickjimenez","erickramirez","erickvaldivia","ernestoalejo","ernestoarias","ernestocruz","ernestoferat","ernestohernandez","ernestoherrera","esauorozco","eunicenunez","evelynefranco","fabianonate","federicogimeno","felipenevarez","felipesarabia","fernandabriseno","fernandatrigos","fernandoaguirre","fernandocastillo","fernandodelpino","fernandoleon","fernandolopez","fernandomolina","fernandomorales","fernandoperez","franciscocarreon","franciscocontreras","franciscoescoppinichi","franciscoflores","franciscogonzalez","franciscorivera","franciscosanchez","frasercassidy","fredelluc","froylanvargas","gabrielacosta","gabrielcervantes","gabrieldeak","gabrielsaldana","gabrielalopez","gabrielanunez","garryirwin","geibenvarela","geovanniperez","gerardoaguirre","gerardogamez","gerardogarcia","gerardohernandez","gerardolopez","gerardorojas","germanzapien","giancarlodivece","gilbertosanchez","gonzalomarquez","guillermocavazos","guillermocoronado","guillermoruvalcaba","gustavodelgadillo","gustavogomez","harryfacundo","hectormiranda","hectorramirez","hectorvilla","helamanavalos","herzonrodriguez","hiramacebo","hugobernal","hugorios","iancastillo","ileanmariscal","irenebustos","irvingcaro","irvingflores","irwingreza","isaacramirez","israelsantiago","ivanbanuelos","ivanespino","ivansoto","jairpadilla","jairpinedo","jakesexton","jamiehiggins","javieraspuru","javierastudillo","javiermartinez","javierrodriguez","javierromero","jenniferhernand","jesusacedo","jesusburquez","jesusespinoza","jesushernandez","jesuslopez","jesusmellado","jesusmoreno","jesusnoriega","jesusosuna","jesusosvaldopadillaparra","jesusparra","jesusramirez","jesusramos","joaquinrodulfo","jonathanbaldwin","jonathankhattak","jorgeanaya","jorgelopez","jorgemejia","jorgenava","jorgeorduno","jorgeperez","jorgerios","jorgerodriguez","josealba","josealvarez","josearellano","josearteaga","josecervantes","josecisneros","josecorrea","josedelamora","josediaz","joseenciso","joseesquivel","josegarcia","josegomez","josehernandez","joselugo","josemartinez","joseocampo","alejandroortiz","fabioramirez","joserodriguez","adrianrubeira","josesalas","josesanchez","josesandoval","josevazquez","juanalcala","carlosaragon","juancastaneda","juancastro","juangaribay","juanherrera","juanjimenez","juanmelgarito","juanmora","juanramirez","juansantiago","juantorre","julioochoa","juliosandoval","justinebateman","karlamartin","karlapinto","katiaverdugo","katrinajones","kayodeanthony","kirstymccrystal","krystelbaca","kurtismoore","laurabracho","leecheung","leekennedy","leemckay","leonardoluna","leonardoraygoza","leopoldomoranchel","lindamccall","lindseyjoseph","lizdiaz","lorenzoinfante","louberluc","luisalfaro","luisanducho","luisaquino","luisarraiz","luisbarreras","luiscalva","luiscastro","luischapa","luiscortes","luiscota","luisfont","luisgarza","luisgonzalez","luisguerra","luishuerta","luismendoza","luismontealegre","luisnaranjo","luisortega","luisosuna","luisperez","luissandoval","luistoscano","luisvaldovinos","luisvillamil","mansooraleep","manuelsilva","manuelmiranda","manuelrodriguez","manuelsantos","manuelvega","marcomartinez","marcoperez","marcotulio","marcovilla","marcozamora","marcosbarrera","marcosgonzalez","marcosreyes","mariabarba","marianaprado","marianasandoval","marioperaza","marioperez","marioruiz","marisolcolon","markbrown","martingallegos","matilderocha","matthewmckee","mauriciodeanda","mauricioperez","mauriciosanchez","mauricioverdin","maxrosas","mayrencastillo","melissakeenan","michaelacromie","michelalmagro","michellecastrejon","migueldelgadillo","migueldelgado","miguelgonzalez","miguelrodriguez","nathanmcalinden","nayelimarquez","nestorsanchez","nestorsoto","niallmcmahon","nilzaaguilar","noeanton","noemihernandez","noemipajarito","norbertocabrera","normanperez","olaflopez","omarornelas","orlandoarias","oscarbacilio","oscarbarrera","oscarcastellanos","oscargarcia","oscarledon","oscarlopez","oscarsanchez","osvaldocampos","osvaldosantiago","oswaldoherrera","oswaldojacobo","pabloitto","pabloperez","paolaaguilar","paoladealba","patriciaayala","patriciogonzalez","patrickhendron","paulbrownlee","paulmatchett","paulmccrory","paulsnowdon","paultummon","paulinamendoza","paulinamunoz","pedrogandoulf","peterdrysdale","radamesacosta","rafaelreyes","rafelgarcia","ramiroflores","renelopez","ricardocastaneda","ricardogonzalez","ricardomojica","ricardonegrete","ricardoruvalcaba","ricardovasquez","rigobertopastorinni","robertogomez","robertohalgravez","robertojasso","rodrigogarcia","rodrigoloyola","rogelioperez","roisinhughes","rubenlicea","ryanpark","salvadorenciso","salvadorgomez","salvadorgonzalez","samuelrangel","sandyvilla","santiagosanchez","saracamacho","sergioburgueno","sergiodiaz","sergioflores","sergioparra","sergiopatron","sofiamilanes","stepfaniegarcia","stephaniagonzalez","stevecruz","susanacervantes","terrykernan","ulisescastaneda","valesygonzalez","vaniavega","veronicamiranda","victorarango","victorcarlos","victorescajeda","victorgarcia","victorgonzalez","victorrojas","victorvalencia","victorialopez","victorinotorres","waltergarcia","williamcaprara","williampark","xochitlnavarro","yassercarreon","yeseniarincon","yulianalopez","zulemaluna","ericanderson","guillermohernandez","ignaciomiranda","isaiasgutierrez","jeannettefaber","joelbarrett","heatherpresley","mariomiranda","mikebarrett","thomasdigati","christophercrawford","richardgillen","kaoperkuczkowski","taylorjackson","mariodivece","ankitvyas","cristianvenegas","susanadelgado","roidescruz","leonardoramirez","isaacbautista","luisflores","alejandromartinez","sergioburgueno"];
-			
+			$scope.arrayReady = false;
+			/*
 			console.log('Tamaño lista 1: ' + arre1.length);
 			console.log('Tamaño lista 2: ' + arre2.length);
 			
@@ -45,7 +38,117 @@ angular.module('employees')
 			console.log(result);
 			console.log('Registros iguales: ' + conta);
 			console.log('Faltan y/o a corregir: ' + (arre1.length - conta));
-            
+            */
+			
+			$scope.check = function()
+			{
+				// For first list!
+				$scope.listToArray1 = $scope.toArrayList($scope.list1);
+				//console.log($scope.listToArray);
+				
+				$scope.listToSpaces1 = $scope.spaces($scope.listToArray1);
+				//console.log($scope.listToSpaces);
+				
+				$scope.listToLower1 = $scope.toLowerCaseList($scope.listToSpaces1);
+				//console.log($scope.listToLower1);
+				
+				$scope.listFinal1 = $scope.deleteAccent($scope.listToLower1);
+				//console.log($scope.listFinal1);
+				
+				
+				// For second list!
+				$scope.listToArray2 = $scope.toArrayList($scope.list2);
+				//console.log($scope.listToArray);
+				
+				$scope.listToSpaces2 = $scope.spaces($scope.listToArray2);
+				//console.log($scope.listToSpaces);
+				
+				$scope.listToLower2 = $scope.toLowerCaseList($scope.listToSpaces2);
+				//console.log($scope.listToLower2);
+				
+				$scope.listFinal2 = $scope.deleteAccent($scope.listToLower2);
+				//console.log($scope.listFinal2);
+				
+				$scope.array1 = $scope.comparativeList($scope.listFinal1, $scope.listFinal2);
+				//$scope.array2 = $scope.comparativeList($scope.listFinal2, $scope.listFinal1);
+			}
+			
+			$scope.toArrayList = function(csv)
+			{
+  				var names_list=csv.split("\n");
+				
+				return names_list;
+			}
+			
+			$scope.spaces = function(list)
+			{
+				var listSpaces = [];
+				for(var i = 0; i < list.length; i ++)
+				{
+					listSpaces[i] = list[i].replace(/\s+/g, '');
+				}
+				return listSpaces;
+			}
+			
+			$scope.toLowerCaseList = function(list)
+			{
+				var listLower = [];
+				for(var i = 0; i < list.length; i ++)
+				{
+					listLower[i] = list[i].toLowerCase();
+				}
+				//console.log(listLower);
+				
+				return listLower;
+			}
+			
+			$scope.deleteAccent = function(list)
+			{
+				var listAccent = [];
+				for(var i = 0; i < list.length; i ++)
+				{
+					listAccent[i] = list[i].normalize('NFD').replace(/[\u0300-\u036f]/g,"");
+				}
+				return listAccent;
+			}
+			
+			$scope.comparativeList = function(arre1, arre2)
+			{
+				
+				var i = 0;
+				var j = 0;
+				var conta = 0;
+				var contaNo = 0;
+				var flag_found = 0;
+				$scope.result = [];
+				
+				for(i = 0; i < arre1.length; i ++)
+				{
+					for(j = 0; j < arre2.length; j++)
+					{
+						flag_found = 0
+						if(arre1[i] == arre2[j])
+						{
+							//console.log(arre2[j]);
+							conta = conta + 1;
+							flag_found = 1;
+							j = arre2.length;
+						}
+					}
+					if (flag_found == 0)
+					{
+						$scope.result[contaNo] = arre1[i];
+						contaNo++;
+						//console.log(contaNo + '.- ' + arre1[i] + ', Fila:' + (i + 1));
+					}
+				}
+				
+				$scope.arrayReady = true;
+				
+				return $scope.result;
+				//console.log('Registros iguales: ' + conta);
+				//console.log('Faltan y/o a corregir: ' + (arre1.length - conta));
+			}
         }
     }
 );

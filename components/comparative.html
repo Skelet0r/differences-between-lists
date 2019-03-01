@@ -1,3 +1,36 @@
 <div>
+	<form name="enterList" layout="column" layout-align="space-around center">
+		<div>
+			<h2 style="text-align: center; color: white">List comparison</h2>
+			<p style="text-align: center; color: white">Simply app for comparison :p</p>
+		</div>
+		<div layout="row" layout-align="space-around center" class="containerTA" layout-padding>
+			<div>
+				<textarea class="text_area" ng-model="list1" flex rows="10" cols="50" placeholder="Paste your excel column..." required></textarea>
+			</div>
 	
+			<div>
+				<textarea class="text_area" ng-model="list2" flex rows="10" cols="50" placeholder="Paste your excel column..." required></textarea>
+			</div>
+		</div>
+		
+		<div layout="row" layout-align="space-around center" layout-padding>
+			<md-input-container>
+       	   		<md-button class="md-raised md-primary" ng-click="check()" md-colors="{background: 'blue-grey'}" ng-disabled="enterList.$invalid">Search</md-button>
+   			</md-input-container>
+		</div>
+	</form>
+</div>
+
+
+<div ng-if="arrayReady" layout="column" layout-align="space-around center">
+	<table id="customers">
+  		<tr>
+    		<th>Without finding</th>
+  		</tr>
+  		
+  		<tr ng-repeat="item in array1">
+    		<td>{{item}}</td>
+  		</tr>
+	</table>
 </div>
